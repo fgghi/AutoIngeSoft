@@ -1,17 +1,22 @@
-<html>
-  <body>        
-        <div class="container">
-          <h1>Controlador de Autitos</h1>
-          <form id="commandForm">
-              <label for="inputData">Ingrese los datos:</label>
-              <input type="text" id="inputData" placeholder="5,5/1,2N/IAIAIAIAA" required>
-              <button type="submit">Ejecutar</button>
-          </form>
-          <div id="results">
-              <h2>Resultados</h2>
-
-          </div>
-      </div>
-    <script type="module" src="./src/presenter.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/css/estilo.css">
+  <title>SIMULADOR DE AUTO</title>
+</head>
+<body>
+  <div id="contenedor">
+  <h1>SIMULADOR DE AUTO</h1>
+  <form id="simulador-form">
+    <label for="comandos">Ingrese Comando:</label>
+    <input type="text" id="comandos" name="comandos" required>
+    <button type="submit" name="ejecutar" id="ejecutar">EJECUTAR</button>
+  </form>
+  <p id="resultado"></p>
+  <div id="errores"></div>
+</div>
+ <script type="module" src="./src/js/presenter.js"></script>
 </body>
 </html>
