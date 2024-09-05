@@ -1,4 +1,4 @@
-import CarController from './auto.js';
+import CarController from './validador.js';
 
 describe('CarController', () => {
   it("devolver el comando dado", () => {
